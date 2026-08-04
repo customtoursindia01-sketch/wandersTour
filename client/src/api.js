@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_API_URL || "https://wanderstour.onrender.com/api";
+const API = import.meta.env.VITE_API_URL || "https://wanderstour.onrender.com/";
 
 export default async function api(path, options = {}) {
   const res = await fetch(`${API}${path}`, {
