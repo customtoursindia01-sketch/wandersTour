@@ -1,24 +1,9 @@
 import axios from "axios";
 
-function resolveApiBase() {
-  const fromEnv = import.meta.env.VITE_API_URL?.trim();
-  const onLocalHost =
-    typeof window !== "undefined" &&
-    (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1");
-
-  if (fromEnv && !(fromEnv.includes("localhost") && !onLocalHost)) {
-    return fromEnv.replace(/\/$/, "");
-  }
-
-  if (!onLocalHost && typeof window !== "undefined") {
-    return "https://wanderstour.onrender.com/api";
-  }
-
-  return "http://localhost:5050/api";
-}
-
 const api = axios.create({
-  baseURL: resolveApiBase(),
+  baseURL: import.meta.env.PROD
+    ? "https://wanderstour.onrender.com/api"
+    : import.meta.env.VITE_API_URL || "http://localhost:5050/api",
 });
 
 api.interceptors.request.use((config) => {
