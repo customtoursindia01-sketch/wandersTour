@@ -41,6 +41,15 @@ app.use(
 );
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.json({
+    name: "Wander India Tours API",
+    status: "ok",
+    health: "/api/health",
+    docs: "All endpoints are under /api/*",
+  });
+});
+
 app.get("/api/health", (req, res) => res.json({ status: "ok" }));
 
 app.use("/api/auth", authRoutes);
