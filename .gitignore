@@ -28,3 +28,7 @@ coverage/
 
 # Cache
 .cache/
+_admin-upload/
+_tours-upload/
+_server-upload/
+
