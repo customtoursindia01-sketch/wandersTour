@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Us | Wander India Tours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <a class="js-phone-link" href="#">📞 Loading…</a>
+      <a class="js-email-link" href="#">✉ Loading…</a>
+    </div>
+    <div class="topbar-right">
+      <span class="js-address">Loading…</span>
+      <div class="topbar-social">
+        <a class="js-facebook" href="#" aria-label="Facebook">FB</a>
+        <a class="js-instagram" href="#" aria-label="Instagram">IG</a>
+        <a class="js-tripadvisor" href="#" aria-label="Tripadvisor">TA</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo js-logo">Wander India Tours</a>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li class="has-dropdown">
+          <a href="tours.html">Tours ▾</a>
+          <ul class="dropdown">
+            <li><a href="tours.html?category=Golden+Triangle+Tours">Golden Triangle Tours</a></li>
+            <li><a href="tours.html?category=Rajasthan+Tours">Rajasthan Tours</a></li>
+            <li><a href="tours.html?category=Same+Day+Tours">Same Day Tours</a></li>
+            <li><a href="tours.html?category=South+India+Tours">South India Tours</a></li>
+            <li><a href="tours.html">All Tour Packages</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">Services ▾</a>
+          <ul class="dropdown">
+            <li><a href="group-tours.html">Group Tours</a></li>
+            <li><a href="corporate-travel.html">Corporate Travel</a></li>
+            <li><a href="car-rental.html">Car Rental</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="nav-phone"><span class="dot"></span> <span class="js-nav-phone">Loading…</span></div>
+      <a href="contact.html" class="btn btn-primary btn-sm">Plan My Trip</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>About Us</span></div>
+    <h1>About Wander India Tours</h1>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-media">
+        <img id="aboutImage" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=650&q=80" alt="Wander India Tours guests" loading="lazy">
+        <div class="about-badge"><strong>10+</strong><span>Years of Experience</span></div>
+      </div>
+      <div>
+        <span class="section-tag">Our Story</span>
+        <h2 id="aboutHeading">A Locally-Owned Tour Company Built on Trust</h2>
+        <p id="aboutBody" style="color:var(--color-muted);margin-top:14px;">Loading…</p>
+        <div class="why-list" id="whyList"></div>
+        <div class="about-actions">
+          <a href="tours.html" class="btn btn-primary">View Tour Packages</a>
+          <a href="contact.html" class="btn btn-primary-dark">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container stats-strip">
+  <div class="stats-card" id="statsCard">
+    <p class="loading-text">Loading stats…</p>
+  </div>
+</div>
+
+<section class="section" id="guides" style="padding-top:110px;">
+  <div class="container">
+    <div class="section-header center" style="margin-left:auto;margin-right:auto;">
+      <span class="section-tag">Expert Guides</span>
+      <h2>Meet a Few of Our Certified Local Guides</h2>
+    </div>
+    <div class="guides-grid" id="guidesGrid">
+      <p class="loading-text">Loading guides…</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header center" style="margin-left:auto;margin-right:auto;">
+      <span class="section-tag">Testimonials</span>
+      <h2>What Our Guests Say</h2>
+    </div>
+    <div class="testimonial-slider" id="testimonialSlider">
+      <p class="loading-text">Loading testimonials…</p>
+    </div>
+    <div class="testimonial-dots" id="testimonialDots"></div>
+  </div>
+</section>
+
+<div id="footerPlaceholder"></div>
+
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/about.js"></script>
+</body>
+</html>

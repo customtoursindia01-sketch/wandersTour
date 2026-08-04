@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tour Packages | Wander India Tours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <a class="js-phone-link" href="#">📞 Loading…</a>
+      <a class="js-email-link" href="#">✉ Loading…</a>
+    </div>
+    <div class="topbar-right">
+      <span class="js-address">Loading…</span>
+      <div class="topbar-social">
+        <a class="js-facebook" href="#" aria-label="Facebook">FB</a>
+        <a class="js-instagram" href="#" aria-label="Instagram">IG</a>
+        <a class="js-tripadvisor" href="#" aria-label="Tripadvisor">TA</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo js-logo">Wander India Tours</a>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li class="has-dropdown active">
+          <a href="tours.html">Tours ▾</a>
+          <ul class="dropdown">
+            <li><a href="tours.html?category=Golden+Triangle+Tours">Golden Triangle Tours</a></li>
+            <li><a href="tours.html?category=Rajasthan+Tours">Rajasthan Tours</a></li>
+            <li><a href="tours.html?category=Same+Day+Tours">Same Day Tours</a></li>
+            <li><a href="tours.html?category=South+India+Tours">South India Tours</a></li>
+            <li><a href="tours.html">All Tour Packages</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">Services ▾</a>
+          <ul class="dropdown">
+            <li><a href="group-tours.html">Group Tours</a></li>
+            <li><a href="corporate-travel.html">Corporate Travel</a></li>
+            <li><a href="car-rental.html">Car Rental</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="nav-phone"><span class="dot"></span> <span class="js-nav-phone">Loading…</span></div>
+      <a href="contact.html" class="btn btn-primary btn-sm">Plan My Trip</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Tour Packages</span></div>
+    <h1>Tour Packages</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header center" style="margin-left:auto;margin-right:auto;">
+      <span class="section-tag">All Itineraries</span>
+      <h2>Experience the Diversity of India</h2>
+      <p>Hand-picked itineraries across India's most loved circuits — every trip is private and can be tailored to your pace.</p>
+    </div>
+
+    <div class="tabs-nav" id="tabsNav">
+      <p class="loading-text">Loading tours…</p>
+    </div>
+
+    <div id="tabPanels"></div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container" style="text-align:center;">
+    <span class="section-tag">Not Sure Where to Start?</span>
+    <h2>Let Us Build a Custom Itinerary for You</h2>
+    <p style="color:var(--color-muted);max-width:560px;margin:14px auto 26px;">Tell us your travel dates, budget, and interests — our team will design a tailor-made route within 24 hours.</p>
+    <a href="contact.html" class="btn btn-primary-dark">Get Your Custom Itinerary</a>
+  </div>
+</section>
+
+<div id="footerPlaceholder"></div>
+
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/tours.js"></script>
+</body>
+</html>

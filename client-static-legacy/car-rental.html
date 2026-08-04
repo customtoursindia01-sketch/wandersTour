@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Car Rental in India | Wander India Tours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <a class="js-phone-link" href="#">📞 Loading…</a>
+      <a class="js-email-link" href="#">✉ Loading…</a>
+    </div>
+    <div class="topbar-right">
+      <span class="js-address">Loading…</span>
+      <div class="topbar-social">
+        <a class="js-facebook" href="#" aria-label="Facebook">FB</a>
+        <a class="js-instagram" href="#" aria-label="Instagram">IG</a>
+        <a class="js-tripadvisor" href="#" aria-label="Tripadvisor">TA</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo js-logo">Wander India Tours</a>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li class="has-dropdown">
+          <a href="tours.html">Tours ▾</a>
+          <ul class="dropdown">
+            <li><a href="tours.html?category=Golden+Triangle+Tours">Golden Triangle Tours</a></li>
+            <li><a href="tours.html?category=Rajasthan+Tours">Rajasthan Tours</a></li>
+            <li><a href="tours.html?category=Same+Day+Tours">Same Day Tours</a></li>
+            <li><a href="tours.html?category=South+India+Tours">South India Tours</a></li>
+            <li><a href="tours.html">All Tour Packages</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown active">
+          <a href="#">Services ▾</a>
+          <ul class="dropdown">
+            <li><a href="group-tours.html">Group Tours</a></li>
+            <li><a href="corporate-travel.html">Corporate Travel</a></li>
+            <li><a href="car-rental.html">Car Rental</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="nav-phone"><span class="dot"></span> <span class="js-nav-phone">Loading…</span></div>
+      <a href="contact.html" class="btn btn-primary btn-sm">Plan My Trip</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Car Rental</span></div>
+    <h1>Car Rental with Driver in India</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container two-col">
+    <div>
+      <span class="section-tag">Comfortable, Vetted Vehicles</span>
+      <h2>Book a Car and Driver for a Day Trip or Your Full Journey</h2>
+      <div class="prose" style="margin-top:16px;">
+        <p>Need a car and driver for a single day trip, an airport transfer, or your entire multi-city itinerary? Our fleet ranges from compact sedans to spacious SUVs and tempo travellers for larger groups.</p>
+        <p>Every vehicle is inspected regularly and every driver is background-verified and trained in guest safety and etiquette.</p>
+        <ul>
+          <li>Sedans, SUVs and tempo travellers (9–26 seats)</li>
+          <li>Experienced, background-verified drivers</li>
+          <li>Airport pickup/drop and outstation trips</li>
+          <li>Optional Wi-Fi and child seats on request</li>
+        </ul>
+      </div>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:10px;">Book a Car</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?w=700&q=80" alt="Car rental with driver in India">
+  </div>
+</section>
+
+<div id="footerPlaceholder"></div>
+
+<script src="js/config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/footer.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+  try { applySettingsToDom(await api("/settings")); } catch (e) { console.error(e); }
+});
+</script>
+</body>
+</html>
